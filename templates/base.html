@@ -7,7 +7,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>Django - Blog Vaxi Drez</title>
+    <title>Django - Blog René Orta</title>
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -42,17 +42,17 @@
                                 
                                 
                                 <div class="header-action-icon-2">
-                                    <a href="shop-compare.html">
+                                    <a href="{%url 'login'%}">
                                         <img class="svgInject" alt="Nest" src="{% static 'assets/imgs/theme/icons/icon-user.svg' %}" />
                                     </a>
                                     <a href="{%url 'login'%}"><span class="lable ml-0">&nbsp;Login</span></a>
                                 </div>
                                 {%else%}
                                 <div class="header-action-icon-2">
-                                    <a href="shop-compare.html">
+                                    <a href="{%url 'home'%}">
                                         <img class="svgInject" alt="Nest" src="{% static 'assets/imgs/theme/icons/dashboard.svg' %}" />
                                     </a>
-                                    <a href="shop-compare.html"><span class="lable ml-0">&nbsp;&nbsp;{{user}}</span></a>
+                                    <a href="{%url 'home'%}"><span class="lable ml-0">&nbsp;&nbsp;{{user}}</span></a>
                                     <div class="cart-dropdown-wrap cart-dropdown-hm2 account-dropdown">
                                         <ul>
                                             <li><a href="{%url 'posts'%}"><i class="fi fi-rs-document mr-10"></i>Posts</a></li>
